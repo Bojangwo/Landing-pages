@@ -1,0 +1,142 @@
+body{
+    background-color:lavenderblush;
+    align-items: center;
+    text-align: center;
+    
+
+}
+.brand-name{
+    font-size: 50px;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.container{
+    max-width: 80%;
+    background-color: beige;
+    padding:0.2rem;
+    margin:3% 10% 0% 10%;
+}
+.nav-box{
+    padding: 1rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none; 
+    position: sticky;
+    
+}
+:active{
+    color:yellow;
+}
+.nav-box img{
+    width : 8%;
+}
+.nav-item{
+    margin: 20px;
+
+}
+
+.socials{
+    position:relative;
+    left: 10rem;
+    
+    
+
+}
+.heading{
+    display: flex;
+    gap: 20px;
+}
+.section-content{
+    display:flex;
+}
+.section-content img{
+    width: 50%;
+}
+.section-content h1{
+    width: 50%;
+    text-align: center;
+    font-size: 60px;
+    padding-top: 10%;
+    font-style: italic;
+}
+.pink-box{
+    background-color: pink;
+    height:80px;
+    padding-top: 10px;
+    margin-top: 0;
+    display: grid;
+    grid-template-columns:150px 150px 150px 150px 150px 150px 150px;
+}
+.btn{
+    position:relative;
+    top:20rem;
+    right:15rem;
+    width:200px;
+    height: 25px;
+    padding:10px 20px;
+    background: pink;
+    color:black;
+    border:solid black;
+    border-radius: 3cap;
+    cursor: pointer;
+    text-decoration: none;
+}
+.white-box{
+    background-color: white;
+    padding-top: 5rem;
+    
+}
+.photo img{
+    width: 295px;
+    height: 295px;
+    
+}
+.photogrid{
+    display: grid;
+    
+    grid-template-columns: 300px 300px 300px 300px ;
+    
+    
+}
+.about-grid{
+    display: grid;
+    padding-bottom: 20px;
+    padding-left: 5rem;
+    grid-template-columns: 350px 350px 350px;
+    background-color: rgb(243, 236, 236);
+    
+}
+.about-grid img{
+    width: 250px;
+}
+.signup{
+    background-color: pink;
+    margin: 0 10%;
+    padding-top: 5%;
+    padding-bottom: 25%;
+}
+.signup button{
+    padding: 5px;
+
+}
+.signup form{
+    position:relative;
+    top: -11rem;
+    left:12rem;
+}
+#about{
+    margin:0 10%;
+    
+}
+@media(max-width:790px){
+    body{
+        max-width: 735px;
+    }
+    .container{
+        display: block;
+    }
+}
+

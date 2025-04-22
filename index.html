@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="brand-name">
+    <h1>MagicBeauty</h1>
+    </div>
+    <div class="container">
+        <p>Free shipping on Orders over $100</p>
+        
+    <header>
+        <div class="nav-box">
+            <h3>MagicBeauty</h3>
+            
+            
+            <nav class="nav-item" href="#index" active>Home</nav>
+            <nav class="nav-item" href="#shop-by">Shop by</nav>
+            <nav id="about" class="nav-item" href="#about">About</nav>
+            <nav class="nav-item" href="#signup"  >Sign Up</nav>
+            
+            <div class="socials">
+
+            <a href="./www.tiktok.com"> <img src="./photos/Screenshot (26).png" alt="tiktok"> </a>
+            <a href="./www.instsgram.com"> <img src="./photos/Screenshot (29).png" alt="instsgram"> </a>
+            <a href="./www.facebook.com"> <img src="./photos/Screenshot (30).png" alt="facebook"> </a>
+            </div>
+            <div class="toggle-icon-container">
+
+                <img onclick=showSidebar()
+                src="./photos/icons/hambugger.svg"
+                alt="hambugger"
+                 class="icon open-icon">
+        
+                <img 
+                 src="./photos/icons/close.svg"
+                  alt="hambugger" 
+                  class="icon close-icon hide">
+        
+                </div>
+        </div>
+
+    </header>
+    <div class="section-content">
+    <img src="./photos/WhatsApp Image 2025-04-17 at 18.14.15_f530901c.jpg" alt="skin">
+    <h1>Shop new <br> Collection <br>
+        
+
+        </h1>
+        <a href="#signup" class="btn">SHOP NOW</a>
+
+    
+    </div>
+    
+
+    <div class="pink-box">
+        <p>  #SALE 15%  </p> <p>#SALE 15%  </p> <p>#SALE 15%  </p><p> #SALE 15%  </p><p>  #SALE 15%</p> <p>  #SALE 15%</p> <p> #SALE 15% </p>
+    </div>
+    <div class="white-box">
+        <div class="photogrid">
+       <article class="photo"> <img src="./photos/WhatsApp Image 2025-04-17 at 23.04.37_24a56df3.jpg" alt="pic">
+        <p>Vitamin C serum <br> <strong>£78,00 EUR</strong> </p>
+        </article>
+        <article class="photo"> <img src="./photos/WhatsApp Image 2025-04-17 at 23.04.37_8596be59.jpg" alt="pic">
+            <p>Retinol <br> <strong>£99,00 EUR</strong> </p>
+            </article>
+        <article class="photo"><img src="./photos/WhatsApp Image 2025-04-17 at 23.04.37_88190837.jpg" alt="pic">
+            <p>Morning Routine Set <br> <strong>£185,00 EUR</strong> </p>
+            </article>
+        <article class="photo"> <img src="./photos/WhatsApp Image 2025-04-17 at 23.04.37_c650703d.jpg " alt="pic">
+            <p> Olive Oil <br> <strong>£24,00 EUR</strong> </p>
+            </article>
+        </div>
+    </div>
+
+    </div>
+
+    
+    <section id="about" class="nav-item">
+    
+            <div class="about-grid">
+                <article ><img src="./photos/WhatsApp Image 2025-04-18 at 18.18.15_51a672c9.jpg" alt="a">
+                <p> <strong>Ecological</strong> <br> Provide clean, safe, and effective <br> skincare solutions.</p></article>
+                <article> <img src="./photos/WhatsApp Image 2025-04-18 at 18.18.16_6da67082.jpg" alt="b"> 
+                <p> <strong>Rewards Program</strong> <br> Promote Love Shop, get <br> commission on what people <br> purchase. Win-win! </p></article>
+                <article> <img src="./photos/WhatsApp Image 2025-04-18 at 18.18.16_2b068a1f.jpg" alt="c">
+                <p> <strong>From our door to yours</strong> <br> Enjoy our skincare products with <br>worldwide shipping. </p></article>
+            </div>
+        
+      </section>
+
+    <section id="signup" class="signup">
+        
+          <h2>Subscribe and get 10% discout</h2>
+          <p>Be the first to know about new collections and exclusive offers.</p>
+          <form>
+            <input type="email" placeholder="Enter your email" class="btn" required />
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+        
+      </section>
+
+      
+
+    
+</body>
+<script>
+    let openIcon = document.querySelector(".open-icon")
+let closeIcon = document.querySelector(".close-icon")
+let menu = document.querySelector("menu")
+let sidebar = document.querySelector(".sidebar")
+
+openIcon.addEventListener("click", ()=>{
+    openIcon.classList.add("hide")
+    closeIcon.classList.remove("hide")
+    sidebar.style.display = "block";
+
+    
+})
+
+closeIcon.addEventListener("click", ()=>{
+   openIcon.classList.remove("hide")
+    closeIcon.classList.add("hide")
+    sidebar.style.display = "none";
+})
+
+
+</script>
+
+
+</html>
