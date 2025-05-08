@@ -6,9 +6,9 @@ body{
 
 }
 .brand-name{
-    font-size: 50px;
+    font-size: 40px;
     font-style: italic;
-    margin-top: 20px;
+    margin-top: 1%;
 }
 
 .container{
@@ -17,66 +17,80 @@ body{
     padding:0.2rem;
     margin:3% 10% 0% 10%;
 }
-.nav-box{
-    padding: 1rem;
-    background-color: white;
+
+.topnav {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    text-decoration: none; 
+    align-items: center;
+    padding: 15px 30px;
+    background: white;
     position: sticky;
-    
-}
-:active{
-    color:yellow;
-}
-.nav-box img{
-    width : 8%;
-}
-.nav-item{
-    margin: 20px;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  
+  .nav-left {
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .nav-center a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .nav-right img {
+    width: 20px;
+    margin-left: 15px;
+    vertical-align: middle;
+  }
+  
 
-}
-
-.socials{
-    position:relative;
-    left: 10rem;
-    
-    
-
-}
 .heading{
     display: flex;
     gap: 20px;
 }
+.new-collection{
+    text-align: center;
+    font-size: 40px;
+    padding: 1%;
+    font-style: italic;
+}
+
 .section-content{
     display:flex;
 }
 .section-content img{
     width: 50%;
 }
-.section-content h1{
+.section-content .new-collection {
     width: 50%;
-    text-align: center;
-    font-size: 60px;
-    padding-top: 10%;
-    font-style: italic;
 }
-.pink-box{
-    background-color: pink;
-    height:80px;
-    padding-top: 10px;
-    margin-top: 0;
-    display: grid;
-    grid-template-columns:150px 150px 150px 150px 150px 150px 150px;
-}
+.sales-stripe {
+    background-color: pink; 
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 15px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+
+
 .btn{
-    position:relative;
-    top:20rem;
-    right:15rem;
-    width:200px;
+    width:150px;
     height: 25px;
-    padding:10px 20px;
+    padding:5px 10px;
     background: pink;
     color:black;
     border:solid black;
@@ -84,59 +98,55 @@ body{
     cursor: pointer;
     text-decoration: none;
 }
-.white-box{
+.products{
     background-color: white;
     padding-top: 5rem;
     
 }
 .photo img{
-    width: 295px;
+    width: 99%;
     height: 295px;
     
 }
 .photogrid{
     display: grid;
     
-    grid-template-columns: 300px 300px 300px 300px ;
+    grid-template-columns: 25% 25% 25% 25% ;
     
     
 }
 .about-grid{
     display: grid;
     padding-bottom: 20px;
-    padding-left: 5rem;
-    grid-template-columns: 350px 350px 350px;
+    grid-template-columns: 33% 33% 33%;
     background-color: rgb(243, 236, 236);
     
 }
 .about-grid img{
-    width: 250px;
+    width: 80%;
 }
-.signup{
-    background-color: pink;
-    margin: 0 10%;
-    padding-top: 5%;
-    padding-bottom: 25%;
-}
-.signup button{
-    padding: 5px;
 
-}
-.signup form{
-    position:relative;
-    top: -11rem;
-    left:12rem;
+footer {
+    background-color: #f3b8c4;
+    padding: 1%;
+
+
 }
 #about{
     margin:0 10%;
     
 }
-@media(max-width:790px){
+@media(max-width:835px){
     body{
         max-width: 735px;
     }
     .container{
         display: block;
     }
+    .section-content .new-collection{
+        font-size:100%;
+        padding:2%;
+    }
+
 }
 
